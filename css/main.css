@@ -1,0 +1,602 @@
+/*Устанавливаем наследуемые стили и фон*/
+body {
+	width: 100%;
+	background: url(../images/main_bg.jpg) top repeat-x;
+	font: 24px/1.4 Arial, Verdana, Tahoma, sans-serif;
+}
+
+/*Отменяем обтекание по обе стороны плавающих элементов*/
+.clear {
+	clear: both;
+}
+
+/*
+	Плавают:
+	#logo, #social-networks и #hot-line внутри #header. 
+	#go-to-fb, #go-to-twitter, #go-to-vk внутри #social-networks.
+	Пункты меню внутри блока #navigation.
+*/
+
+/*Перечисляем плавающие в левой части элементы*/
+#logo, 
+#social-networks, 
+#go-to-fb, 
+#go-to-twitter, 
+#go-to-vk,
+#navigation ul li, 
+#go-to-fb  span, 
+#go-to-twitter span, 
+#go-to-vk span,
+#fact,
+#feature1, 
+#feature2, 
+#feature3, 
+#feature4, 
+#feature5, 
+#feature6,
+#callback-form-block,
+#callback-form-block .fields-description,
+#current-shares,
+#hours-wrapper,
+#minutes-wrapper,
+#seconds-wrapper,
+#our-address,
+#our-address img,
+#our-phone-numbers img {
+	float: left;
+}
+
+/*Перечисляем плавающие в правой части элементы*/
+#hot-line,
+#full-name, 
+#phone-number, 
+#address,
+#our-phone-numbers,
+#our-address div,
+#our-phone-numbers div {
+	float: right;
+}
+
+
+/*Устанавливаем курсор для иконок и пунктов меню*/
+#logo, 
+#go-to-fb, 
+#go-to-twitter, 
+#go-to-vk, 
+#navigation ul li a,
+#send {
+	cursor: pointer;
+}
+
+#header,  
+#shares,
+#contacts > div:first-child {
+	min-width: 960px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#header {
+	height: 140px;
+	padding: 10px 0;
+}
+
+#logo {
+	width: 181px;
+	height: 106px;
+	margin: 0px 310px 44px 15px;
+}
+
+/*Заголовок логотипа*/
+#header h1 {
+	color: #006699;
+	text-transform: uppercase;
+	font-size: 21px;
+	margin: 0px 2px 0px 4px;
+}
+
+/*Блок ссылок на соц сети*/
+#social-networks {
+	width: 141px;
+	height: 43px;
+	padding: 0 3px; 
+	margin: 42px 0px 43px 0px;
+}
+
+/*Общие стили для иконок соц сетей*/
+#go-to-fb  span, #go-to-twitter span, #go-to-vk span {
+	width: 43px;
+	height: 43px;
+	cursor: pointer;
+}
+
+#go-to-fb span, #go-to-twitter span {
+	margin-right: 5px;
+}
+
+/*Устанавливаем иконки*/
+#go-to-fb span {
+	background: url(../images/fb_icon.png) no-repeat;
+}
+
+#go-to-twitter span {
+	background: url(../images/twitter_icon.png) no-repeat;
+}
+
+#go-to-vk span {
+	background: url(../images/vk_icon.png) no-repeat;
+}
+
+/*Устанавливаем поведения иконок*/
+#go-to-fb span:hover {
+	background: url(../images/fb_hover_icon.png) no-repeat;	
+}
+
+#go-to-twitter span:hover {
+	background: url(../images/twitter_hover_icon.png) no-repeat;
+}
+
+#go-to-vk span:hover {
+	background: url(../images/vk_hover_icon.png) no-repeat;
+}
+
+/*Блок горячих линий*/
+
+#hot-line {
+	width: 286px;
+	height: 95px;
+	margin: 25px 15px 0px 0px;
+}
+
+/*Оформление номеров*/
+#hot-line span {
+	color: #006699;
+	font-size: 30px;
+	line-height: 1em;
+	display: block;
+}
+
+#hot-line span strong {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+#first-number {
+	margin: 0px 0px 15px 0;
+}
+
+#second-number {
+	margin: 15px 0px 0px 0px;
+}
+
+/*стили навигации*/
+#navigation.default {
+	height: 35px;
+	background-color: #007898;
+	max-width: 1200px;
+	min-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#navigation.fixed {
+	position: fixed;
+	top: 0;
+	max-width: 100%;
+	min-width: 100%;
+	height: 48px;
+	overflow: hidden;
+}
+
+#navigation ul {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 55px;
+}
+
+/*Пункты навигации*/
+
+#navigation ul li a {
+	display: block;
+	width: 185px;
+	height: 35px;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 35px;
+	margin: 0 auto;
+}
+
+/*Общее поведение для пунктов навигации*/
+#navigation ul li a:hover {
+	background-color: #006D8B;
+
+	/*
+		inset это внутренний тень
+		inset <сдвиг по x> <сдвиг по y> <цвет с прозрачностью>
+	*/
+	box-shadow: inset 0 3px 20px rgba(0,0,0, 0.25);
+
+	border-radius: 3px;
+}
+
+/*Метка для активного блока*/
+#navigation .active {
+	box-shadow: inset 0px -2px rgba(255,255,255,9);
+}
+
+/*Обертка для контента*/
+#content-wrapper {
+	width: initial;
+}
+/*Высокое качество услуг*/
+#excellence-service {
+	background: url("../images/excellent_service_bg.jpg") center/cover no-repeat;
+	width: 925px;
+	height: 433px;
+	margin: 0 auto;
+}
+
+/*Факт о сервисе*/
+#fact {
+	width: 850px;
+	height: 227px;
+	background-color: rgba(255,255,255,0.7);
+	padding: 16px 0 23px 0;
+	margin: 5px 37px;
+}
+
+#fact p {
+	color: #006699;
+	font-weight: bold;
+	text-align: center;
+	line-height: 2em;
+}
+
+/*Оболочка для блока с особенностями сервиса*/
+#features-wrapper {
+	background: url("../images/features_bg.jpg") center/cover no-repeat;
+	max-width: 100%;
+	min-width: 960px;
+	min-height: 484px;
+	max-height: 700px;
+
+	/*
+		inset это внутренний тень
+		inset <сдвиг по x> <сдвиг по y> <цвет с прозрачностью>
+	*/
+	box-shadow: inset 0 55px 71px 48px rgba(255,255,255, 0.8);
+}
+
+/*Особенности сервиса*/
+#features {
+	width: 925px;
+	margin: 0 auto;
+}
+
+#feature1, 
+#feature2, 
+#feature3, 
+#feature4, 
+#feature5, 
+#feature6 {
+	width: 275px;
+	height: 241px;
+	margin-top: 20px;
+}
+
+#features div img {
+	margin: 0 60px;
+	display: inline-block;
+}
+
+#feature3 img {
+	margin: 0 88px !important;
+}
+
+#feature6 img {
+	margin: 0 85px !important;
+}
+
+#features div p {
+	width: inherit;
+	height: 100px;
+	color: #003366;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin: 0 5px;
+}
+
+#feature1, 
+#feature2, 
+#feature4,
+#feature5 {
+	margin-right: 50px;
+}
+
+/*Действующие акции*/
+
+#shares {
+	min-height: 470px;
+	max-height: 555px;
+}
+
+#shares-title {
+	height: 55px;
+	background-color: #006699;
+}
+
+#shares-title h2 {
+	color: #fff;
+	line-height: initial;
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/*Стили для блока с акциями*/
+#about-shares {
+	background: url(../images/about_shares_bg.jpg) right/contain no-repeat;
+	min-height: 364px;
+	max-height: 420px;
+}
+
+/*Стили для формы обратной связи*/
+#callback-form-block {
+	width: 350px;
+	height: 325px;
+	margin-top: 25px;
+	background-color: #0099cc;
+	border: 5px solid #fff;
+	/*
+	<сдвиг по x> <сдвиг по y> <растяжение тени> <цвет с прозрачностью>
+	*/
+	box-shadow: 3px 3px 20px rgba(0,0,0, 0.8),
+				inset 3px 3px 20px rgba(0,0,0,0.6);
+
+	border-radius: 25px;
+}
+
+#callback-form-block > p:first-child {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 25px;
+	margin: 10px 37px 5px 50px;
+}
+
+#callback-form-block > p:first-child + p {
+	color: #ff0;
+	font-weight: bold;
+	font-size: 23px;
+	text-transform: uppercase;
+	margin: 5px 67px 7px 77px;
+}
+
+#full-name-wrapper,
+#phone-number-wrapper,
+#address-wrapper {
+	padding: 10px 25px;
+}
+
+#callback-form-block .fields-description {
+	font-size: 15px;
+	color: #fff;
+	margin: 9px 10px;
+}
+
+#full-name-wrapper p.fields-description {
+	margin-top: 5px;
+}
+
+#callback-form-block input {
+	width: 200px;
+	height: 25px;
+	padding: 0 5px;
+	margin-bottom: 10px;
+	border-radius: 7px;
+	box-shadow: inset 0 7px 10px -2px #3c3c3c;
+}
+
+#send {
+	display: block;
+	width: 200px;
+	height: 24px;
+	line-height: 24px;
+	margin: 20px 65px;
+	border-radius: 7px;
+	border: 2px solid #fff;
+	background-color: #6c0;
+	box-shadow: inset 0px -19px 45px 3px rgba(51,51,51,0.3);
+	padding: 8px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#callback-form-block p:last-child {
+	margin-left: 17px;
+	font-size: 10px;
+	color: #fff;	
+}
+
+/*Стили для текущей акции */
+#current-shares {
+	width: 255px;
+	height: 215px;
+	padding: 10px 0 0 0;
+	margin: 65px 0 0 120px;
+}
+
+
+#current-shares > p:first-child {
+	font-size: 23px;
+	font-weight: bold;
+	color: #333;
+	text-transform: uppercase;
+	text-align: center;
+	margin-left: 6px;
+}	
+
+#current-shares > p:first-child + p + p {
+	color: #333;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 0 25px 35px 37px;
+}
+
+#current-shares > p strong {
+	font-size: 35px;
+	font-weight: bold;
+	color: #ff6666;
+	margin: 0 47px 0 58px;
+}
+
+/*Стили для таймера*/
+#current-shares .countdownContainer {
+	width: 270px;
+	height: 78px;
+}
+
+#hours-wrapper,
+#minutes-wrapper,
+#seconds-wrapper {
+	width: 75px;
+	height: 70px;
+	background-color: #ccc;
+	box-shadow: 1px 1px 7px 1px #3c3c3c, 
+	            inset 3px 3px 20px 3px #333;
+	border-radius: 7px;
+}
+
+#hours-wrapper,
+#minutes-wrapper,
+#seconds-wrapper {
+	padding-top: 10px; 
+}
+
+#hours-wrapper,
+#minutes-wrapper {
+	margin-right: 15px;
+}
+
+#current-shares .countdownContainer p {
+	color: #333;
+	font-size: 18px;
+	text-align: center;
+	margin-left: 5px;
+}
+
+#current-shares #hours, 
+#current-shares #minutes, 
+#current-shares #seconds {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+/*Стили для раздела "О нас" */
+#about-us {
+	background: url(../images/about_us_bg.jpg) center/cover no-repeat;
+	min-height: 786px;
+	max-height: 995px;
+	border-top: 12px solid #006699;
+	overflow: hidden;
+}
+
+#about-us div {
+	margin: 20px auto;
+	padding: 15px 40px 35px 40px;
+	width: 845px;
+	background-color: rgba(255,255,255, 0.7);
+}
+
+#about-us h2 {
+	font-size: 30px;
+	color: #006666;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#about-us p {
+	font-size: 16px;
+	color: #333;
+	text-align: justify;
+}
+
+#about-us img {
+	width: 829px;
+	height: 356px;
+	box-shadow: 2px 2px 15px 2px #333;
+	margin-top: 40px;
+}
+
+/*Стили для раздела "Контакты"*/
+#contacts > div:first-child {
+	padding: 30px 0;
+}
+
+#our-address {
+	min-width: 400px;
+	max-width: 500px;
+	height: 145px;
+	margin: 20px 15px 20px 0;
+}
+
+#our-address div,
+#our-phone-numbers div {
+	margin-top: 15px;
+}
+
+#our-address img,
+#our-phone-numbers img {
+	margin-right: 30px;
+}
+
+#our-address img {
+	width: 89px;
+	height: 143px;
+}
+
+#contacts h3, #contacts p {
+	color: #066;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#contacts h3 {
+	text-transform: uppercase;
+}
+
+#our-phone-numbers {
+	min-width: 500px;
+	max-width: 600px;
+	height: 125px;
+	margin: 20px 0 20px 15px;
+}
+
+#our-phone-numbers img {
+	width: 157px;
+	height: 120px;
+}
+
+/*Стили для Google maps*/
+#map-wrapper {
+	width: 100%;
+	position: relative;
+	height: 425px;
+	margin: 0 auto;
+}
+
+#map-wrapper iframe {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+

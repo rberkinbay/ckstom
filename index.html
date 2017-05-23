@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+		<link rel = "stylesheet" href = "css/reset.css"/>
+		<link rel = "stylesheet" href = "css/main.css"/>
+		<script type="text/javascript" src = "js/jquery-3.1.0.min.js"></script> <!--Подключение библиотеки jQuery-->
+		<script type="text/javascript" src = "js/scroller.js"></script> <!--Скрипт для плавного скроллинга-->
+		<title>ckstom</title>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "logo">
+				<a href = "#" title="Главная страница">
+					<img  src = "images/logo.png" alt = "Наш Логотип"/>
+				</a>
+				<!--Разметил главным заголовком, так как это слово часть логотипа-->
+				<h1>стоматология</h1>
+			</div> <!--end of logo-->
+			<!--Социальные сети-->
+			<div id = "social-networks">
+				<a href="#" id = "go-to-fb" title="Мы в Фейсбуке"  target="_blank" >
+					<span></span>
+				</a><!--end of fb-->
+				<a href="#" id = "go-to-twitter" title="Мы в Твиттере"  target="_blank" >
+					<span></span>
+				</a><!--end of twitter-->
+				<a href="http://www.vk.com" id = "go-to-vk" title="Мы в ВКонтакте"  target="_blank" >
+					<span></span>
+				</a><!--end of vk-->			
+			</div> <!--end of social networks-->
+			<!--Горячая линия-->
+			<div id = "hot-line">
+				<span id = "first-number">+7 (727) <strong>323-62-76</strong></span>
+				<span id = "second-number">+7 (727) <strong>323-62-86</strong></span>
+			</div><!-- end of hot-line-->
+			<!--Отменяем обтекание по обе стороны #header-->
+			<div class="clear"></div>
+		</div> <!--end of header-->
+		<!--Навигация-->
+		<!--Скрипт scroller.js нашел в сети.
+		    Скрипт изменил, чтобы автокроллинг был в обе стороны (наверх и вниз). 
+		    Скопировал код для якоря home, поставил для автоскроллинга, немного изменив логику.-->
+		<div id = "navigation" class = "default">
+
+				<ul>
+					<li class = "active"><a href = "#go-to-header">Главная</a></li>
+					<li><a href = "#go-to-about-us">О нас</a></li>
+					<li><a href = "#go-to-features-wrapper">Наши услуги</a></li>
+					<li><a href = "#go-to-shares">Новости</a></li>
+					<li><a href = "#go-to-contacts">Контакты</a></li>
+				</ul>
+			
+		</div><!--end of navigation-->
+		<!--Отменяем обтекание по обе стороны навигации-->
+		<div class="clear"></div>
+		<div id = "content-wrapper">
+			<div id = "excellence-service"> <!--Высокое качество услуг-->
+				<div id="fact"> <!--Факт о сервисе-->
+					<p>
+						Первая стоматологическая клиника в г. Алматы, соответствующая требованиям (ВОЗ) Всемирной Организации Здравоохранения, поддерживающая стандарты Министерства Здравоохранения РК <br />о безопасности лечения. <br /> 
+						Работаем с 9.00 до 20.00 часов ежедневно
+					</p>
+				</div> <!--end of fact-->
+			</div><!--end of excellent service-->
+			<div id = "features-wrapper">
+				<div id = features> <!--Особенности-->
+					<div id = "feature1">
+						<img src = "images/feature1.png" alt = "24/7"/>
+						<p>Наша клиника работает 7 дней в неделю</p>
+					</div> <!--end of feature1-->
+					<div id = "feature2">
+						<img src = "images/feature2.png" alt = "Опытный коллектив"/>
+						<p>Опытный коллектив. Квалифицированные сотрудники</p>
+					</div><!--end of feature2-->
+					<div id = "feature3">
+						<img src = "images/feature3.png" alt = "Сатинарные нормы"/>
+						<p>Строжайшее соблюдение санитарных норм, мы используем одноразовые инструменты</p>
+					</div><!--end of feature3-->
+					<div class="clear"></div>
+					<div id = "feature4">
+						<img src = "images/feature4.png" alt = "Новейшее европейское обуродование"/>
+						<p>Новейшее европейское оборудование</p>
+					</div><!--end of feture4-->
+					<div id = "feature5">
+						<img src = "images/feature5.png" alt = "ВОЗ"/>
+						<p>Программа ВОЗ (АнтиСПИД, антиГЕПАТИТ )</p>
+					</div><!--end of feature5-->
+					<div id = "feature6">
+						<img src = "images/feature6.png" alt = "Стаж"/>
+						<p>15 лет успешной работы</p>
+					</div><!--end of feature6-->
+				</div><!--end of features-->
+				<div class="clear"></div>
+			</div><!-- end of features-wrapper-->
+			<div id = "shares" class="contentbox"><!--Акции-->
+					<div id = "shares-title">
+						<h2>наши акции</h2>
+					</div><!--end of shares-title-->
+					<div id = "about-shares"> <!--Об акциях-->
+						<div id = "callback-form-block">
+							<p>отправить заявку</p>
+							<p>прямо сейчас!</p>
+							<form name = "callbackForm">
+								<div id = "full-name-wrapper">
+									<p class = "fields-description">Ф.И.О.:</p>
+									<input id = "full-name" name = "ful-name" type="text" name="fullName">
+								</div>
+								<div id = "phone-number-wrapper">
+									<p class = "fields-description">Телефон</p>
+									<input id = "phone-number" name = "phone-number" type="text" name="phoneNumber">
+								</div>
+								<div id = "address-wrapper">
+									<p class = "fields-description">Адрес:</p>
+									<input id = "address" name = "address" type="text" name="address">
+								</div>
+							</form>
+							<div class="clear"></div>
+							<!--Кнопка отправки-->
+							<a id = "send" href = "#"> 
+								Оставить заявку!
+							</a>
+							<p>После отправки формы с вами свяжутся.</p>
+
+						</div><!--end of call back form block-->
+						
+						<div id = "current-shares"> <!--Текущие акции-->
+							<p>имплантация зуба</p>
+							<p><strong>99 900 тг</strong></p>				
+							<p>вместо  146 000 тг</p>
+							<!--Таймер - нашел в интернете-->
+							<!--Разметку и оформление делала сам, немного подкорректировал чужой скрипт-->
+							<div class = "countdownContainer">
+								<div id = "hours-wrapper">
+									<p id = "hours">4</p>
+									<p>часов</p>
+								</div>
+								<div id = "minutes-wrapper">
+									<p id = "minutes">12</p>
+									<p>минут</p>
+								</div>
+								<div id = "seconds-wrapper">
+									<p id = "seconds">22</p>
+									<p>секунд</p>
+								</div>
+							</div> <!--end of countdownContainer-->
+
+						</div> <!--end of current-shares-->
+					</div><!--end of about-shares-->
+			</div><!--end of shares-->
+			<div class="clear"></div>
+			<div id = "about-us" class="contentbox"> <!--О нас-->
+				<div>
+					<h2>О нас</h2>
+					<p>
+					Наш успех сегодня - это успех большого коллектива этой клиники, потому что каждый вкладывает Наш успех сегодня - это успех большого коллектива этой клиники, потому что каждый вкладывает частицу своей души в любимое дело. Наши врачи работают с ассистентами в &laquo;четыре руки&raquo;, что улучшает качество лечения и экономит время не только врача, но и пациента! <br /> Клиника &laquo;CK Stom&raquo; стала первой стоматологией г. Алматы полностью соответствующей требованиям (ВОЗ) Всемирной Организации Здравоохранения, применяя в повседневной практике одноразовые инструменты в комплекте &laquo;Profikit&raquo;. <br /> Это накладывает особую ответственность, и мы на деле готовы доказать, что наша клиника действительно является одним из признанных лидеров стоматологии города и работает с соблюдением самых высоких международных стандартов!
+					</p>
+					<img src = "images/about_us_main.jpg" alt = "Наш офис"/>
+				</div> <!--end of about us-->
+			</div>
+			<div id = "contacts" class="contentbox"><!--Контакты-->
+				<div>
+					<div id = "our-address">
+						<img src = "images/location_icon.png" alt = "Локация"/>
+						<div>
+							<h3>наш адрес:</h3>
+							<p>Казахстан,<br />Алматы, ул. Шевченко 165Б</p>
+						</div>
+					</div><!--end of or address-->
+					<div id = "our-phone-numbers">
+						<img src = "images/phone_icon.png" alt = "Телефон"/>
+						<div>
+							<h3>Телефоны:</h3>
+							<p>8(727)323-62-76, 8(727)323-62-86<br />8 700 929-02-81, 8 775 109-63-09</p>
+						</div>
+					</div><!--end of our phone numbers-->
+				</div>
+				<div class="clear"></div>
+				
+			</div><!--end of contacts-->
+		</div><!--end of content wrapper-->
+
+		<!--Скрипт responsiveStyle.js писал сам -->
+		<script type="text/javascript" src = "js/responsiveStyle.js"></script>
+		<script type="text/javascript">
+		/*Данный скрипт писал сам */
+			window.onresize = responsiveStyle;
+			responsiveStyle();
+		</script>
+
+		<!--Скрипт для фиксации навигации-->
+		<script type="text/javascript" src = "js/stickyNav.js"></script>
+
+		<!--Скрипт таймера -->
+		<script type="text/javascript" src = "js/countDown.js"></script>
+		<script type="text/javascript">
+			window.onload = countDown;
+			countDown();
+		</script>
+
+		<!--Обертка для Google maps-->
+		<div id = "map-wrapper">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1453.2075870025299!2d76.89180048858351!3d43.24271985511655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe98a14412f3cd0b1!2z0KHRgtC-0LzQsNGC0L7Qu9C-0LPQuNGH0LXRgdC60LDRjyDQutC70LjQvdC40LrQsCAiQ0sgU3RvbSI!5e0!3m2!1sru!2skz!4v1485209491342" frameborder="0" ></iframe>
+		</div><!--end of map-wrapper-->
+	</body>
+</html>
