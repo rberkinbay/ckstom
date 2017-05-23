@@ -1,7 +1,7 @@
 /* Скрипт таймера */
 function countDown() {
 				var now = new Date();
-				var eventDate = new Date(2017, 01, 27);
+				var eventDate = new Date(2017, 06, 15);
 
 				var currentTime = now.getTime();
 				var eventTime = eventDate.getTime();
