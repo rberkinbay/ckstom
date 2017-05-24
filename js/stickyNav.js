@@ -1,6 +1,10 @@
 /*Скрипт для фиксации навигации*/
 
 $(function () {
+	var navHeight = $("#navigation").outerHeight(true);
+	
+	$(<div>, {"class": ".marginImitation"}).insertBefore("#navigation").css("height", navHeight).hide();
+	
 	var navOffset = $("#navigation").offset();
 	$(document).on("scroll", function () {
 		var scrollTop = $(document).scrollTop();
@@ -32,7 +36,9 @@ $(function () {
 						}
 					)
 				}
-			);			
+			);	
+
+			$(".marginImitation").show();
 		} else {
 			$("#navigation").removeClass("fixed");
 			$("#navigation ul li a").css({
@@ -63,9 +69,12 @@ $(function () {
 					)
 				}
 			);
+			
+			$(".marginImitation").hide();
 		};
 	});
-
+	
+	
 /*Код, приведенный ниже, скопировал. Но адаптировал к моей разметке. */
 
 	var excellenceServiceTop = $("#excellence-service").offset().top;
