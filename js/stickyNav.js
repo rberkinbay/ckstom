@@ -1,7 +1,7 @@
 /*Скрипт для фиксации навигации*/
 
 $(function () {
-	var navHeight = $("#navigation").outerHeight(true);
+	var navHeight; 
 	
 	$(<div>, {"class": ".marginImitation"}).insertBefore("#navigation").css("height", navHeight).hide();
 	
@@ -37,8 +37,8 @@ $(function () {
 					)
 				}
 			);	
-
-			$(".marginImitation").show();
+			navHeight = $("#navigation").outerHeight(true);
+			$(<div>, {"class": ".marginImitation"}).insertBefore("#navigation").css("height", navHeight).show();
 		} else {
 			$("#navigation").removeClass("fixed");
 			$("#navigation ul li a").css({
