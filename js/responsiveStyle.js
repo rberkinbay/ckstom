@@ -1,4 +1,4 @@
-/*Скрипт для адаптации */
+/*Типа "адаптив" */
 var responsiveStyle = function () {
 				
 				var logo = document.getElementById("logo");

@@ -66,7 +66,6 @@ $(function () {
 		};
 	});
 
-/*Код, приведенный ниже, скопировал. Но адаптировал к моей разметке. */
 
 	var excellenceServiceTop = $("#excellence-service").offset().top;
 	var featuresTop = $("#features-wrapper").offset().top;

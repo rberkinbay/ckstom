@@ -9,38 +9,34 @@
 		<title>ckstom</title>
 	</head>
 	<body>
-		<div id = "header">
-			<div id = "logo">
+		<div id = "header"> <!--Start header-->
+			<div id = "logo"> <!-- Start logo -->
 				<a href = "#" title="Главная страница">
 					<img  src = "images/logo.png" alt = "Наш Логотип"/>
 				</a>
-				<!--Разметил главным заголовком, так как это слово часть логотипа-->
 				<h1>стоматология</h1>
 			</div> <!--end of logo-->
-			<!--Социальные сети-->
+			<!--Start social-networks -->
 			<div id = "social-networks">
 				<a href="#" id = "go-to-fb" title="Мы в Фейсбуке"   >
 					<span></span>
-				</a><!--end of fb-->
+				</a>
 				<a href="#" id = "go-to-twitter" title="Мы в Твиттере"   >
 					<span></span>
-				</a><!--end of twitter-->
+				</a>
 				<a href="#" id = "go-to-vk" title="Мы в ВКонтакте"   >
 					<span></span>
-				</a><!--end of vk-->			
+				</a>			
 			</div> <!--end of social networks-->
-			<!--Горячая линия-->
+			<!--Start hot-line-->
 			<div id = "hot-line">
 				<span id = "first-number">+7 (727) <strong>323-62-76</strong></span>
 				<span id = "second-number">+7 (727) <strong>323-62-86</strong></span>
 			</div><!-- end of hot-line-->
-			<!--Отменяем обтекание по обе стороны #header-->
+			
 			<div class="clear"></div>
 		</div> <!--end of header-->
-		<!--Навигация-->
-		<!--Скрипт scroller.js нашел в сети.
-		    Скрипт изменил, чтобы автокроллинг был в обе стороны (наверх и вниз). 
-		    Скопировал код для якоря home, поставил для автоскроллинга, немного изменив логику.-->
+		<!--Start navigation-->
 		<div id = "navigation" class = "default">
 
 				<ul>
@@ -52,7 +48,7 @@
 				</ul>
 			
 		</div><!--end of navigation-->
-		<!--Отменяем обтекание по обе стороны навигации-->
+		
 		<div class="clear"></div>
 		<div id = "content-wrapper">
 			<div id = "excellence-service"> <!--Высокое качество услуг-->
@@ -61,44 +57,44 @@
 						Первая стоматологическая клиника в г. Алматы, соответствующая требованиям (ВОЗ) Всемирной Организации Здравоохранения, поддерживающая стандарты Министерства Здравоохранения РК <br />о безопасности лечения. <br /> 
 						Работаем с 9.00 до 20.00 часов ежедневно
 					</p>
-				</div> <!--end of fact-->
-			</div><!--end of excellent service-->
-			<div id = "features-wrapper">
+				</div> 
+			</div>
+			<div id = "features-wrapper"><!--Start features-wrapper-->
 				<div id = features> <!--Особенности-->
 					<div id = "feature1">
 						<img src = "images/feature1.png" alt = "24/7"/>
 						<p>Наша клиника работает 7 дней в неделю</p>
-					</div> <!--end of feature1-->
+					</div> 
 					<div id = "feature2">
 						<img src = "images/feature2.png" alt = "Опытный коллектив"/>
 						<p>Опытный коллектив. Квалифицированные сотрудники</p>
-					</div><!--end of feature2-->
+					</div>
 					<div id = "feature3">
 						<img src = "images/feature3.png" alt = "Сатинарные нормы"/>
 						<p>Строжайшее соблюдение санитарных норм, мы используем одноразовые инструменты</p>
-					</div><!--end of feature3-->
+					</div>
 					<div class="clear"></div>
 					<div id = "feature4">
 						<img src = "images/feature4.png" alt = "Новейшее европейское обуродование"/>
 						<p>Новейшее европейское оборудование</p>
-					</div><!--end of feture4-->
+					</div>
 					<div id = "feature5">
 						<img src = "images/feature5.png" alt = "ВОЗ"/>
 						<p>Программа ВОЗ (АнтиСПИД, антиГЕПАТИТ )</p>
-					</div><!--end of feature5-->
+					</div>
 					<div id = "feature6">
 						<img src = "images/feature6.png" alt = "Стаж"/>
 						<p>15 лет успешной работы</p>
-					</div><!--end of feature6-->
-				</div><!--end of features-->
+					</div>
+				</div>
 				<div class="clear"></div>
 			</div><!-- end of features-wrapper-->
-			<div id = "shares" class="contentbox"><!--Акции-->
+			<div id = "shares" class="contentbox"><!--Start  shares (Акции)-->
 					<div id = "shares-title">
 						<h2>наши акции</h2>
-					</div><!--end of shares-title-->
-					<div id = "about-shares"> <!--Об акциях-->
-						<div id = "callback-form-block">
+					</div>
+					<div id = "about-shares"> 
+						<div id = "callback-form-block"> <!--Start call back form block-->
 							<p>отправить заявку</p>
 							<p>прямо сейчас!</p>
 							<form name = "callbackForm">
@@ -128,9 +124,8 @@
 							<p>имплантация зуба</p>
 							<p><strong>99 900 тг</strong></p>				
 							<p>вместо  146 000 тг</p>
-							<!--Таймер - нашел в интернете-->
-							<!--Разметку и оформление делала сам, немного подкорректировал чужой скрипт-->
-							<div class = "countdownContainer">
+							
+							<div class = "countdownContainer"><!--Start countdownContainer-->
 								<div id = "hours-wrapper">
 									<p id = "hours">4</p>
 									<p>часов</p>
@@ -145,11 +140,11 @@
 								</div>
 							</div> <!--end of countdownContainer-->
 
-						</div> <!--end of current-shares-->
-					</div><!--end of about-shares-->
+						</div> 
+					</div>
 			</div><!--end of shares-->
 			<div class="clear"></div>
-			<div id = "about-us" class="contentbox"> <!--О нас-->
+			<div id = "about-us" class="contentbox"> <!--Start about-us-->
 				<div>
 					<h2>О нас</h2>
 					<p>
@@ -158,7 +153,7 @@
 					<img src = "images/about_us_main.jpg" alt = "Наш офис"/>
 				</div> <!--end of about us-->
 			</div>
-			<div id = "contacts" class="contentbox"><!--Контакты-->
+			<div id = "contacts" class="contentbox"><!--Start contacts-->
 				<div>
 					<div id = "our-address">
 						<img src = "images/location_icon.png" alt = "Локация"/>
@@ -166,21 +161,21 @@
 							<h3>наш адрес:</h3>
 							<p>Казахстан,<br />Алматы, ул. Шевченко 165Б</p>
 						</div>
-					</div><!--end of or address-->
+					</div>
 					<div id = "our-phone-numbers">
 						<img src = "images/phone_icon.png" alt = "Телефон"/>
 						<div>
 							<h3>Телефоны:</h3>
 							<p>8(727)323-62-76, 8(727)323-62-86<br />8 700 929-02-81, 8 775 109-63-09</p>
 						</div>
-					</div><!--end of our phone numbers-->
+					</div>
 				</div>
 				<div class="clear"></div>
 				
 			</div><!--end of contacts-->
 		</div><!--end of content wrapper-->
 
-		<!--Скрипт responsiveStyle.js писал сам -->
+		<!--Типа "адаптив" -->
 		<script type="text/javascript" src = "js/responsiveStyle.js"></script>
 		<script type="text/javascript">
 		/*Данный скрипт писал сам */
@@ -198,7 +193,7 @@
 			countDown();
 		</script>
 
-		<!--Обертка для Google maps-->
+		<!--Start map-wrapper-->
 		<div id = "map-wrapper">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1453.2075870025299!2d76.89180048858351!3d43.24271985511655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe98a14412f3cd0b1!2z0KHRgtC-0LzQsNGC0L7Qu9C-0LPQuNGH0LXRgdC60LDRjyDQutC70LjQvdC40LrQsCAiQ0sgU3RvbSI!5e0!3m2!1sru!2skz!4v1485209491342" frameborder="0" ></iframe>
 		</div><!--end of map-wrapper-->
